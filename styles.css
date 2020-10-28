@@ -1,0 +1,106 @@
+body{
+  align-items: center;
+  text-align: center;
+  margin-top: 5%;
+  background: -webkit-linear-gradient(0deg, #9ECCA3 30%, #309fe4 55%, #04d18e 100%);
+}
+
+h1{
+  font-family: 'Turret Road', cursive;
+  margin-bottom: 5%;
+}
+
+.sub{
+  font-family: 'Grandstander', cursive;
+}
+
+h3{
+  font-family: 'Grandstander', cursive;
+  font-size: 145%;
+}
+
+a{
+  font-size: 135%;
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+footer{
+  font-family: 'Turret Road', cursive;
+  font-size: 115%;
+}
+
+.strike{
+  text-decoration: line-through;
+}
+
+.pun:hover{
+  font-size: 130%;
+  font-weight: bolder;
+  opacity: 0.8;
+}
+
+.smimg{
+  height: 150px;
+}
+
+img{
+  display: block;
+  margin: auto;
+}
+
+.ex{
+  margin-top: 12%;
+}
+
+.gm{
+  line-height: 3;
+  margin: auto;
+  width: 15%;
+  text-align: center;
+}
+
+.container-fluid{
+  margin: 8% 0%;
+  margin-bottom: 14%;
+}
+
+.emoji:hover{
+  font-size: 200%;
+}
+
+@media (max-width: 578px){
+  body{
+    margin-top: 15%;
+  }
+
+  h1{
+    font-size: 220%;
+  }
+
+  h3{
+    font-size: 115%;
+  }
+
+  a{
+    font-size: 110%;
+  }
+
+  .sub{
+    font-size: 130%;
+  }
+
+  .gm{
+    display: block;
+    margin-top: 7%;
+    margin-bottom: 8%;
+  }
+
+  footer{
+    padding-bottom: 3%;
+  }
+}

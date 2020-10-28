@@ -1,0 +1,45 @@
+var generatedPattern = [];
+var userPattern = [];
+var level = 1;
+var stat = true;
+var colorsList = ["red", "green", "blue", "yellow"];
+var randomNumber = Math.floor(Math.random() * 4);
+
+function playSound(name) {
+  var audio = new Audio("sounds/" + name + ".mp3");
+  audio.muted = true;
+  audio.play();
+}
+
+function animatePress(currentColor) {
+  $("#" + currentColor).addClass("pressed");
+  setTimeout(function() {
+    $("#" + currentColor).removeClass("pressed");
+  }, 100);
+}
+
+while(stat) {
+  randomNumber = Math.floor(Math.random() * 4);
+  generatedPattern.push(colorsList[randomNumber]);
+  playSound(colorsList[randomNumber]);
+  //console.log("Bot: " + generatedPattern);
+
+  //code to flash -> colorsList[randomNumber]
+  animatePress(colorsList[randomNumber]);
+
+  $(".btn").on("click", function(event) {
+    userPattern.push["event.target.id"];
+    animatePress(event.target.id);
+    console.log(userPattern);
+    if (userPattern == generatedPattern) {
+      level = level + 1;
+
+    }
+  });
+  console.log(userPattern + " Level " + level);
+  //code to flash -> userPattern[len - 1]
+  level = 0;
+  stat = false;
+  // console.log("You loose! Please Restart.");
+  console.log("end");
+}
